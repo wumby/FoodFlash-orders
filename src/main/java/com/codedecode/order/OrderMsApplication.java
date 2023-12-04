@@ -1,4 +1,4 @@
-package com.jack.order;
+package com.codedecode.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,15 +7,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class OrderApplication {
+public class OrderMsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
+		SpringApplication.run(OrderMsApplication.class, args);
 	}
-
 
 	@Bean
 	@LoadBalanced
-	public RestTemplate getRestTemplate() {return  new RestTemplate();}
+	public RestTemplate getRestTemplate() {
+		return new RestTemplate();
+	}
 
 }

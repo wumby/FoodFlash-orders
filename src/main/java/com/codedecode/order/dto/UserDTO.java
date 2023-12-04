@@ -1,17 +1,18 @@
-package com.jack.order.dto;
+package com.codedecode.order.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Restaurant {
+@NoArgsConstructor
+public class UserDTO {
 
-    private int id;
-    private String name;
+    private int userId;
+    private String userName;
+    private String userPassword;
     private String address;
     private String city;
-    private String description;
+
 }
